@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Поиск</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link href="style.css" rel="stylesheet" />
+  </head>
+  <body>
+    <main class="main">
+      <form class="form" method="post" action="{{ url_for('result') }}">
+        <div class="input-group">
+          <input type="text" name="book" placeholder="Название книги" />
+        </div>
+        <div class="input-group">
+          <input type="text" name="words" placeholder="Слова для поиска" />
+        </div>
+        <div class="input-group">
+          <input type="text" name="count" placeholder="Количество предложений" />
+        </div>
+        <button>Отправить</button>
+      </form>
+    </main>
+  </body>
+</html>

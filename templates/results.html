@@ -1,0 +1,14 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Результат</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link href="style.css" rel="stylesheet" />
+  </head>
+  <body>
+    {% for sentence in result.sentences %}
+    <p>{{ sentence }}</p>
+    {% endfor %}
+  </body>
+</html>
